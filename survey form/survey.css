@@ -42,11 +42,6 @@ body::before {
     font-size: 1.125rem;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
 }
-
-@media (min-width: 480px)
-form {
-    padding: 2.5rem;
-}
 form {
     background: var(--color-darkblue-alpha);
     padding: 2.5rem;
