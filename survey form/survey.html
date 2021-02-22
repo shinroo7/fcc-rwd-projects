@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR: Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1 id="title">Recipe Story Survey Form</h1>
+    <p id="description">Thank you for taking the time helping us improve the quality and service</p>
+
+    <form id="survey-form">
+    <div id="form-group">
+         <label for="name" id="name-label">Name 
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required></label>
+        
+        <label for="email" id="email-label">Email
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required></label>
+        
+        <label for="number" id="number-label">Age<span class="clue"> (optional)</span>
+        <input type="number" name="number" id="number" class="form-control" min="10" max="99" placeholder="Age"></label>
+
+        <p>- How do you hear about Recipe Story?</p>
+       
+        <select id="dropdown" name="channel" class="form-control" required>
+        <option disabled="" selected="" value="">Select the channel</option>
+        <option value="wom">Family / Friends</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="google">Google Search</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <p>- How likely would you recommend Recipe Story to a friend?</p>
+
+      <label>
+          <input name="user-recommend" value="100%" type="radio" class="input-radio">
+        100%
+      </label>
+      <label>
+          <input name="user-recommend" value="%" type="radio" class="input-radio">
+        50%
+      </label>
+      <label>
+          <input name="user-recommend" value="10%" type="radio" class="input-radio">
+        10%
+      </label>
+     
+    <p>- What is your favourite product of Recipe Story?</p>
+    <select id="most-like" name="mostLike" class="form-control" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="Black-forest-cake">Black Forest Cake</option>
+        <option value="cup-cake">Cup Cakes</option>
+        <option value="donuts">Donuts</option>
+        <option value="biscuits">Biscuits</option>
+      </select>
+
+      <div class="form-group">
+      <p>
+        - What new products would you like to see in the near future?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+        <label><input name="prefer" value="taiwanese-buns" type="checkbox" class="input-checkbox">Taiwanese Buns</label>
+        <label>
+        <input name="prefer" value="japanese-cheese-cakes" type="checkbox" class="input-checkbox">Japanese Cheese Cakes</label>
+        <label><input name="prefer" value="hungarian-pogacsa" type="checkbox" class="input-checkbox">Hungarian Pogacsa</label>
+        <label><input name="prefer" value="swiss-roll" type="checkbox" class="input-checkbox">Swiss Roll</label>
+        <label><input name="prefer" value="others" type="checkbox" class="input-checkbox">Others</label>
+        <input type="text" name="prefer" id="prefer" class="form-control" placeholder="Enter your choice">
+
+      <p>- Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea form-control" name="comment" placeholder="Enter your comment here..."></textarea>
+    
+      <button type="submit" id="submit" class="submit-button">
+        <strong>Submit</strong>
+      </button>
+
+    </div>
+    </form>
+</body>
+</html>
