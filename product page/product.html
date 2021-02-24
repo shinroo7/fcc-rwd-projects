@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR: Product Landing Page</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/0326323446.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://cdn.pixabay.com/photo/2018/06/02/05/16/iceland-3447812_960_720.png" alt="iceland logo">
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#get-to-know">Get to Know</a></li>
+        <li><a class="nav-link" href="#packages">Packages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="hero">
+    <h2>Amazing, once-in-a-lifetime experiences</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+      <input id="submit" type="submit" value="Get Started" class="btn">
+    </form>
+  </section>
+
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fas fa-3x fa-hotel"></i></div>
+        <div class="desc">
+          <h2>Premium Accommodation</h2>
+          <p>
+            We've put together a list of the best places to stay in Iceland. Hand-pick three- to four-star hotels.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="icon"><i class="far fa-4x fa-smile"></i></div>
+        <div class="desc">
+          <h2>Friendly and Knowledgable Guide</h2>
+          <p>
+            Do you know the best places soptting the northern light? Or where to enjoy and try the local Icelandic food? Our local tour guides will take you on the most authentic Icelandic journey.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="icon">
+          <i class="fas fa-4x fa-skating"></i></div>
+        <div class="desc">
+          <h2>Unique Activities</h2>
+          <p>
+            From admiring the beautiful scenery to walking on the marvellous glacier, start your adventures and create precious memories in this magic land. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-to-know">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/WbLagmCvcHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="packages">
+      <div class="product" id="4days">
+        <div class="level">4-day Iceland Highlights</div>
+        <h2>£700/pp</h2>
+        <ol>
+          <li>3-star hotel accommodation</li>
+          <li>Blue Lagoon Entry</li>
+          <li>Golden Circle - Gullfoss Waterfall</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+
+      <div class="product" id="8days">
+        <div class="level">8-day Iceland Circle</div>
+        <h2>£1200/pp</h2>
+        <ol>
+          <li>3-star hotel accommodation</li>
+          <li>Capital Reykjavík Tour</li>
+          <li>Seljalandsfoss and Skógafoss</li>
+          <li>Jökulsárlón Glacier Lagoon</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+
+      <div class="product" id="14days">
+        <div class="level">14-day Holistic Iceland </div>
+        <h2>£1500/pp</h2>
+        <ol>
+          <li>4-star hotel accommodation</li>
+          <li>1-night Blue Lagoon Hotel</li>
+          <li>Jökulsárlón Glacier Lagoon</li>
+          <li>East Iceland, Snæfellsnes peninsula and</li>
+
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+
+
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright &copy 2021, Time In Iceland</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
